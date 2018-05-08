@@ -1,0 +1,11 @@
+<h1>TabPortalOutlet example</h1>
+
+<ul class="tab-list">
+  <li *ngFor="let tab of tabs"
+      (click)="switchTo(tab.name)"
+      [ngClass]="{'-active': isCurrent(tab.name) }" >
+    <span [textContent]="tab.label"></span>
+  </li>
+</ul>
+
+<div class="tab-content" #tabContentOutlet></div>

@@ -1,0 +1,32 @@
+.tab-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.tab-content {
+  border: #888;
+  /* background: #F1F1F1; */
+  /* padding: 1rem; */
+  height: 100vh; /* replace this */
+}
+
+li {
+  flex: 1;
+  display: inline-block;
+  list-style: none;
+  border: 1px solid #EEE;
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+
+li.-active {
+  border-bottom: none;
+  background: #F1F1F1;
+}
+
+li span {
+  font-color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
